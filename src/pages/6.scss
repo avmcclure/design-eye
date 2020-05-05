@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&display=swap");
+
+$background-1: #f9f4ef;
+$headline-1: #020826;
+$paragraph-1: #716040;
+$button-1: #8c7851;
+$button-text-1: #fffffe;
+$accent-1: #f25042;
+
+$background-2: #fffffe;
+$headline-2: #020826;
+$sub-header-2: #716040;
+
+.page-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat";
+  background: $background-1;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+    margin: 0;
+    background: $background-1;
+    color: $paragraph-1;
+    width: 100%;
+    &.alt {
+      background: $background-2;
+      color: $headline-2;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    color: $headline-1;
+    &.alt {
+      color: $headline-2;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    color: $headline-1;
+
+    & .alt {
+      color: $headline-2;
+    }
+  }
+
+  span {
+    margin-bottom: 1rem;
+    display: block;
+    line-height: 1.5rem;
+  }
+}

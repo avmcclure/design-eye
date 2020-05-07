@@ -1,0 +1,68 @@
+.timeline-entry {
+  margin: 8rem;
+  display: grid;
+  grid-template-columns: 40% 10% 40%;
+  column-gap: 5%;
+  width: 100%;
+
+  div {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+    &.image-wrapper {
+      justify-content: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .image {
+        flex: 0 0 auto;
+
+        border-radius: 50%;
+        width: 10vw;
+        height: 10vw;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+
+  img {
+    max-width: 10vw;
+    width: auto;
+    object-fit: cover;
+  }
+
+  .description {
+    justify-content: flex-start;
+    span {
+      width: 70%;
+    }
+  }
+
+  &.left {
+    flex-direction: row;
+
+    .description {
+      justify-content: flex-start;
+    }
+
+    .date {
+      justify-content: flex-end;
+    }
+  }
+
+  &.right {
+    flex-direction: row-reverse;
+
+    .description {
+      justify-content: flex-end;
+    }
+
+    .date {
+      justify-content: flex-start;
+    }
+  }
+}
